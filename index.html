@@ -1,11 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Muhamad Isa Daud | Web Portofolio</title>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <h1>Isa Daud</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Project</a>
+        <a href="#skill">Skill</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h2>Hello! I'm Muhamad Isa Daud</h2>
+      <p>A student studying at <span style="font-weight: bold;">SMK-IT ASSYIFA BOARDING SCHOOL</span> majoring in RPL, full of enthusiasm and likes to turn ideas into functional and beautiful web experiences.</p>
+    </div>
+
+    <div class="hero-image">
+      <img src="/img/porto.JPG" alt="Foto Isa Daud">
+    </div>
     
+  </div>
+</section>
+
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello, my name is Muhamad Isa Daud, I was born on 28 August 2009, I live in Serang city, I am a student of <span style="font-weight: bold;">SMK-IT ASSYIFA BOARDING SCHOOL</span> majoring in RPL, full of enthusiasm and love to translate ideas into functional and beautiful web experiences. I enjoy working in a team, am used to independent learning, and am always open to criticism for improvement.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+  <div class="container">
+    <h2>Proyek Terbaru</h2>
+    <div class="project-list">
+
+      <div class="project">
+        <img src="/img/PAS-WD.png" alt="Todo List App">
+        <h3>Todude</h3>
+        <p>Aplikasi untuk mencatat tugas harian dengan Laravel dan Blade.</p>
+      </div>
+
+      <div class="project">
+        <img src="" alt="Landing Page Produk">
+        <h3>Web PKL</h3>
+        <p>Comming Soon</p>
+      </div>
+
+      <div class="project">
+        <img src="/img/image.png" alt="Website Portofolio">
+        <h3>My Portofolio</h3>
+        <p>Proyek portofolio pribadi yang simple dan responsif.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skill" class="skill">
+  <div class="skill-container">
+    <h1>Skills</h1>
+    <div class="skills">
+
+        <h2>HTML</h2>
+        <div class="progress-bar">
+          <div class="html"><span>80%</span></div>
+        </div>
+
+        <h2>CSS</h2>
+        <div class="progress-bar">
+          <div class="css"><span>70%</span></div>
+        </div>
+
+        <h2>PHP</h2>
+        <div class="progress-bar">
+          <div class="php"><span>65%</span></div>
+        </div>
+
+        <h2>PYTHON</h2>
+        <div class="progress-bar">
+          <div class="python"><span>70%</span></div>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Kontak</h2>
+      <p><a href="https://www.instagram.com/isdudeee/" target="_blank" class="fa fa-instagram"></a></p>
+
+    <form class="contact-form" action="#" method="POST">
+      <label for="name">Nama</label>
+      <input type="text" id="name" name="name"  placeholder="Masukkan nama Anda" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"  placeholder="Masukkan email Anda" required>
+
+      <label for="message">Pesan</label>
+      <textarea id="message" name="message" rows="5"  placeholder="Masukkan Pesan Anda"></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Isa Daud. All rights reserved.</p>
+  </footer>
 </body>
 </html>
