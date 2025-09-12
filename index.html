@@ -1,127 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Muhamad Isa Daud | Web Portofolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Muhammad Isa Daud</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Isa Daud</h1>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#projects">Project</a>
-        <a href="#skill">Skill</a>
-        <a href="#contact">Contact</a>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="font-bold text-lg">PORTOFOLIO</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-teal-500"><i class="fa fa-home"></i> Home</a>
+        <a href="#about" class="hover:text-teal-500"><i class="fa fa-user"></i> About</a>
+        <a href="#skills" class="hover:text-teal-500"><i class="fa fa-chart-bar"></i> Skills</a>
+        <a href="#projects" class="hover:text-teal-500"><i class="fa fa-code"></i> Project</a>
+        <a href="#contact" class="hover:text-teal-500"><i class="fa fa-envelope"></i> Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-  <div class="hero-container">
-    <div class="hero-text">
-      <h2>Hello! I'm Muhamad Isa Daud</h2>
-      <p>A student studying at <span style="font-weight: bold;">SMK-IT ASSYIFA BOARDING SCHOOL</span> majoring in RPL, full of enthusiasm and likes to turn ideas into functional and beautiful web experiences.</p>
-    </div>
-
-    <div class="hero-image">
-      <img src="../img/porto.JPG" alt="Foto Isa Daud">
-    </div>
-    
-  </div>
-</section>
-
-
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hello, my name is Muhamad Isa Daud, I was born on 28 August 2009, I live in Serang city, I am a student of <span style="font-weight: bold;">SMK-IT ASSYIFA BOARDING SCHOOL</span> majoring in RPL, full of enthusiasm and love to translate ideas into functional and beautiful web experiences. I enjoy working in a team, am used to independent learning, and am always open to criticism for improvement.</p>
+  <!-- Home -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center bg-white text-center">
+    <h2 class="text-6xl font-bold">Welcome To My <span class="text-teal-500">Portofolio</span></h2>
+    <p class="mt-4 text-2xl">Muhamad Isa Daud</p>
+    <div class="flex gap-6 mt-6 text-3xl">
+      <a href="#" class="hover:text-teal-500"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-teal-500"><i class="fab fa-github"></i></a>
+      <a href="#" class="hover:text-teal-500"><i class="fab fa-tiktok"></i></a>
     </div>
   </section>
 
-  <section id="projects" class="projects">
-  <div class="container">
-    <h2>Proyek Terbaru</h2>
-    <div class="project-list">
-
-      <div class="project">
-        <img src="/img/PAS-WD.png" alt="Todo List App">
-        <h3>Todude</h3>
-        <p>Aplikasi untuk mencatat tugas harian dengan Laravel dan Blade.</p>
+  <!-- About -->
+  <section id="about" class="h-screen flex items-center bg-gray-50 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-6">About Me</h2>
+        <p class="text-lg leading-relaxed">
+          Hello, my name is <span class="font-bold">Muhammad Isa Daud</span>, 
+          a passionate student currently attending 
+          <span class="font-bold">SMKIT Assyifa Boarding School</span> 
+          majoring in <span class="font-bold">Software Engineering (RPL)</span>. 
+        </p>
       </div>
-
-      <div class="project">
-        <img src="" alt="Landing Page Produk">
-        <h3>Web PKL</h3>
-        <p>Comming Soon</p>
+      <div class="flex justify-center">
+        <img src="https://via.placeholder.com/300x400" alt="Profile Photo" class="rounded-3xl shadow-lg">
       </div>
-
-      <div class="project">
-        <img src="/img/image.png" alt="Website Portofolio">
-        <h3>My Portofolio</h3>
-        <p>Proyek portofolio pribadi yang simple dan responsif.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="skill" class="skill">
-  <div class="skill-container">
-    <h1>Skills</h1>
-    <div class="skills">
-
-        <h2>HTML</h2>
-        <div class="progress-bar">
-          <div class="html"><span>80%</span></div>
-        </div>
-
-        <h2>CSS</h2>
-        <div class="progress-bar">
-          <div class="css"><span>70%</span></div>
-        </div>
-
-        <h2>PHP</h2>
-        <div class="progress-bar">
-          <div class="php"><span>65%</span></div>
-        </div>
-
-        <h2>PYTHON</h2>
-        <div class="progress-bar">
-          <div class="python"><span>70%</span></div>
-        </div>
-
-    </div>
-  </div>
-</section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Kontak</h2>
-      <p><a href="https://www.instagram.com/isdudeee/" target="_blank" class="fa fa-instagram"></a></p>
-
-    <form class="contact-form" action="#" method="POST">
-      <label for="name">Nama</label>
-      <input type="text" id="name" name="name"  placeholder="Masukkan nama Anda" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email"  placeholder="Masukkan email Anda" required>
-
-      <label for="message">Pesan</label>
-      <textarea id="message" name="message" rows="5"  placeholder="Masukkan Pesan Anda"></textarea>
-
-      <button type="submit">Kirim Pesan</button>
-    </form>
-
     </div>
   </section>
 
-  <footer>
-    <p>&copy; Isa Daud. All rights reserved.</p>
+  <!-- Skills -->
+  <section id="skills" class="h-screen bg-white flex items-center px-6">
+    <div class="max-w-6xl mx-auto w-full">
+      <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Skill 1 -->
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-semibold">HTML</span>
+            <span class="text-sm font-bold">90%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-teal-500 h-4 rounded-full" style="width:90%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-semibold">CSS</span>
+            <span class="text-sm font-bold">80%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-teal-500 h-4 rounded-full" style="width:80%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-semibold">JavaScript</span>
+            <span class="text-sm font-bold">70%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-teal-500 h-4 rounded-full" style="width:70%"></div>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="font-semibold">PHP / Laravel</span>
+            <span class="text-sm font-bold">75%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div class="bg-teal-500 h-4 rounded-full" style="width:75%"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="h-screen bg-gray-50 flex items-center px-6">
+    <div class="max-w-6xl mx-auto w-full">
+      <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Project Card 1 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/400x250" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-lg mb-2">Project 1</h3>
+            <p class="text-sm text-gray-600">Deskripsi singkat project ini.</p>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/400x250" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-lg mb-2">Project 2</h3>
+            <p class="text-sm text-gray-600">Deskripsi singkat project ini.</p>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/400x250" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-lg mb-2">Project 3</h3>
+            <p class="text-sm text-gray-600">Deskripsi singkat project ini.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="h-screen bg-white flex items-center px-6">
+    <div class="max-w-3xl mx-auto w-full">
+      <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded-lg p-3" />
+        <input type="email" placeholder="Your Email" class="w-full border border-gray-300 rounded-lg p-3" />
+        <textarea placeholder="Your Message" rows="4" class="w-full border border-gray-300 rounded-lg p-3"></textarea>
+        <button class="bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    <p>&copy; 2025 Muhammad Isa Daud. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
