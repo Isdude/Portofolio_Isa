@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,9 +28,9 @@
     <h2 class="text-6xl font-bold">Welcome To My <span class="text-teal-500">Portofolio</span></h2>
     <p class="mt-4 text-2xl">Muhamad Isa Daud</p>
     <div class="flex gap-6 mt-6 text-3xl">
-      <a href="#" class="hover:text-teal-500"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="hover:text-teal-500"><i class="fab fa-github"></i></a>
-      <a href="#" class="hover:text-teal-500"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/isdudeee/" target="_blank" class="hover:text-teal-500"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Isdude" target="_blank" class="hover:text-teal-500"><i class="fab fa-github"></i></a>
+      <a href="https://www.tiktok.com/@sh1nr44_" target="_blank" class="hover:text-teal-500"><i class="fab fa-tiktok"></i></a>
     </div>
   </section>
 
@@ -38,16 +38,20 @@
   <section id="about" class="h-screen flex items-center bg-gray-50 px-6">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       <div>
-        <h2 class="text-3xl font-bold mb-6">About Me</h2>
+        <h2 class="text-3xl font-bold mb-6">Tentang Saya</h2>
+        <p class="text-lg leading-relaxed mb-4">
+          Halo, nama saya <span class="font-bold">Muhammad Isa Daud</span>, 
+          seorang pelajar di <span class="font-bold">SMKIT Assyifa Boarding School</span> 
+          jurusan <span class="font-bold">Rekayasa Perangkat Lunak (RPL)</span>.
+        </p>
         <p class="text-lg leading-relaxed">
-          Hello, my name is <span class="font-bold">Muhammad Isa Daud</span>, 
-          a passionate student currently attending 
-          <span class="font-bold">SMKIT Assyifa Boarding School</span> 
-          majoring in <span class="font-bold">Software Engineering (RPL)</span>. 
+          Saya memiliki minat besar dalam bidang pengembangan web dan teknologi. 
+          Tujuan saya adalah terus mengasah keterampilan pemrograman, 
+          membangun proyek yang bermanfaat, serta menjadi seorang developer profesional di masa depan.
         </p>
       </div>
       <div class="flex justify-center">
-        <img src="https://via.placeholder.com/300x400" alt="Profile Photo" class="rounded-3xl shadow-lg">
+        <img src="img/porto.jpg" alt="Foto Profil" class="rounded-3xl shadow-lg max-w-[180px] md:max-w-[220px] w-full object-cover">
       </div>
     </div>
   </section>
@@ -83,11 +87,11 @@
         <!-- Skill 3 -->
         <div>
           <div class="flex justify-between mb-1">
-            <span class="font-semibold">JavaScript</span>
-            <span class="text-sm font-bold">70%</span>
+            <span class="font-semibold">Flutter</span>
+            <span class="text-sm font-bold">75%</span>
           </div>
           <div class="w-full bg-gray-200 rounded-full h-4">
-            <div class="bg-teal-500 h-4 rounded-full" style="width:70%"></div>
+            <div class="bg-teal-500 h-4 rounded-full" style="width:75%"></div>
           </div>
         </div>
 
@@ -107,51 +111,64 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="h-screen bg-gray-50 flex items-center px-6">
-    <div class="max-w-6xl mx-auto w-full">
-      <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <!-- Project Card 1 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-          <img src="https://via.placeholder.com/400x250" alt="Project 1" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="font-bold text-lg mb-2">Project 1</h3>
-            <p class="text-sm text-gray-600">Deskripsi singkat project ini.</p>
-          </div>
+<section id="projects" class="h-screen bg-gray-50 flex items-center px-6">
+  <div class="max-w-6xl mx-auto w-full">
+    <h2 class="text-3xl font-bold mb-8 text-center">Project</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Project Card 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="img/PAS-WD.png" alt="ToDude Project" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg mb-2">ToDude - To Do List</h3>
+          <p class="text-sm text-gray-600">
+            Aplikasi To Do List sederhana bernama <span class="font-semibold">ToDude</span>. 
+            Dibuat menggunakan HTML, CSS, dan JavaScript untuk membantu pengguna mencatat, 
+            mengelola, serta menyelesaikan daftar aktivitas harian dengan tampilan yang rapi dan responsif.
+          </p>
         </div>
-
-        <!-- Project Card 2 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-          <img src="https://via.placeholder.com/400x250" alt="Project 2" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="font-bold text-lg mb-2">Project 2</h3>
-            <p class="text-sm text-gray-600">Deskripsi singkat project ini.</p>
-          </div>
-        </div>
-
-        <!-- Project Card 3 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-          <img src="https://via.placeholder.com/400x250" alt="Project 3" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="font-bold text-lg mb-2">Project 3</h3>
-            <p class="text-sm text-gray-600">Deskripsi singkat project ini.</p>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Project Card 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="img/webpkl.png" alt="Sistem PKL" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg mb-2">Sistem Manajemen PKL</h3>
+          <p class="text-sm text-gray-600">
+            Aplikasi berbasis Laravel untuk mengelola kegiatan PKL siswa. 
+            Fitur utama meliputi CRUD data siswa, guru, perusahaan, 
+            serta input dan monitoring laporan harian.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="img/portofolioweb.png" alt="Website Portofolio" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg mb-2">Website Portofolio</h3>
+          <p class="text-sm text-gray-600">
+            Website portofolio pribadi menggunakan TailwindCSS 
+            yang berfungsi untuk menampilkan project, keterampilan, 
+            dan informasi kontak saya.
+          </p>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Contact -->
   <section id="contact" class="h-screen bg-white flex items-center px-6">
     <div class="max-w-3xl mx-auto w-full">
       <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
       <form class="space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded-lg p-3" />
-        <input type="email" placeholder="Your Email" class="w-full border border-gray-300 rounded-lg p-3" />
-        <textarea placeholder="Your Message" rows="4" class="w-full border border-gray-300 rounded-lg p-3"></textarea>
-        <button class="bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600">Send Message</button>
+        <input type="text" placeholder="Nama Anda" class="w-full border border-gray-300 rounded-lg p-3" />
+        <input type="email" placeholder="Email Anda" class="w-full border border-gray-300 rounded-lg p-3" />
+        <textarea placeholder="Pesan Anda" rows="4" class="w-full border border-gray-300 rounded-lg p-3"></textarea>
+        <button class="bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600">Kirim Pesan</button>
       </form>
     </div>
   </section>
