@@ -9,6 +9,162 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+
+/* Container tanpa scrollbar */
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Flex untuk konten scroll */
+.scroll-content {
+  display: flex;
+  gap: 20px;
+  animation: scroll-left 10s linear infinite;
+}
+
+/* Card */
+.scroll-content .card {
+  min-width: 280px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Gambar sertifikat ukuran sama */
+.cert-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Animasi scroll */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsif: layar kecil card lebih kecil */
+@media (max-width: 576px) {
+  .scroll-content .card {
+    min-width: 220px;
+  }
+  .cert-img {
+    height: 160px;
+  }
+}
+.typing-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #1d9a96; /* kursor */
+  width: 0;
+  animation: typing 3s steps(26, end) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: #1d9a96; }
+  100% { border-color: transparent; }
+}
+/* From Uiverse.io by ZAKARIAE48CHELLE */ 
+.Btn {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.3s;
+}
+
+.svgIcon {
+  fill: #2196f3;
+}
+
+.icon2 {
+  width: 18px;
+  height: 5px;
+  border-bottom: 2px solid #1d9a96;
+  border-left: 2px solid #1d9a96;
+  border-right: 2px solid #1d9a96;
+}
+
+.tooltip {
+  position: absolute;
+  top: -50px;
+  opacity: 0;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(12, 12, 12);
+  background-size: 1000%;
+  background-position: center;
+  transform: rotate(45deg);
+  bottom: -5%;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover .tooltip {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover {
+  background-color: #1d9a96;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover .icon2 {
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.Btn:hover .svgIcon {
+  fill: white;
+  animation: slide-in-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+  </style>
 </head>
 <body class="bg-light text-dark">
 
@@ -33,11 +189,29 @@
 
   <!-- Home -->
   <section id="home" class="vh-100 d-flex flex-column justify-content-center align-items-center bg-white text-center">
-    <h2 class="display-3 fw-bold">Welcome To My <span class="text-primary">Portofolio</span></h2>
-    <p class="mt-3 fs-4">Muhamad Isa Daud</p>
+<h2 class="display-3 fw-bold">
+  <span class="typing-text">Welcome To My <span style="color: #1d9a96;">Portofolio</span>
+</h2>
+<p class="mt-3 fs-4">Muhamad Isa Daud</p>
     <div class="d-flex gap-4 mt-4 fs-2">
       <a href="https://www.instagram.com/isdudeee/" target="_blank" class="text-dark"><i class="fab fa-instagram"></i></a>
       <a href="https://github.com/Isdude" target="_blank" class="text-dark"><i class="fab fa-github"></i></a>
+<!-- From Uiverse.io by ZAKARIAE48CHELLE --> 
+<button class="Btn">
+  <svg
+    class="svgIcon"
+    viewBox="0 0 384 512"
+    height="1em"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+    ></path>
+  </svg>
+  <span class="icon2"></span>
+  <span class="tooltip">100MB</span>
+</button>
+
     </div>
   </section>
 
@@ -80,7 +254,7 @@
             <p class="card-text small text-muted">
               Aplikasi To Do List sederhana bernama <span class="fw-semibold">ToDude</span>.
             </p>
-            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalToDude">
+            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalToDude" style="background-color: #1d9a96;">
               Lihat Detail
             </button>
           </div>
@@ -104,6 +278,12 @@
                 Dibuat dengan <b>HTML, CSS, dan JavaScript</b>, aplikasi ini memiliki fitur menambah,
                 menghapus, dan menandai tugas selesai dengan tampilan rapi dan responsif.
               </p>
+              <p>Dibuat Dengan:</p>
+              <p>Front-End: HTML, CSS, JS</p>
+              <p>Back-End: PHP</p>
+              <p>Framework: LARAVEL</p>
+              <p>Database: Mysql</p>
+              <p><a href="https://github.com/Isdude/Todude.git" target="_blank">Link Github</a></p>
             </div>
           </div>
         </div>
@@ -118,7 +298,7 @@
             <p class="card-text small text-muted">
               Aplikasi berbasis Laravel untuk mengelola kegiatan PKL siswa.
             </p>
-            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalPKL">
+            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalPKL" style="background-color: #1d9a96;">
               Lihat Detail
             </button>
           </div>
@@ -141,6 +321,12 @@
                 Sistem berbasis <b>Laravel</b> untuk mengelola data siswa, guru, dan perusahaan.
                 Mendukung <b>CRUD</b>, input laporan harian, serta monitoring aktivitas PKL.
               </p>
+              <p>Dibuat Dengan:</p>
+              <p>Front-End: HTML, CSS, JS</p>
+              <p>Back-End: PHP</p>
+              <p>Framework: LARAVEL, BOOTSTARP</p>
+              <p>Database: Mysql</p>
+              <p><a href="https://github.com/delfa-23/web-pkl.git" target="_blank">Link Github</a></p>
             </div>
           </div>
         </div>
@@ -153,8 +339,8 @@
           <div class="card-body d-flex flex-column">
             <h5 class="card-title fw-bold">Brewly App</h5>
             <p class="card-text small text-muted">
-Aplikasi Pemesanan Kopi Dengan UI Sederhana            </p>
-            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalBrewly">
+                Aplikasi Pemesanan Kopi Dengan UI Sederhana            </p>
+            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalBrewly" style="background-color: #1d9a96;">
               Lihat Detail
             </button>
           </div>
@@ -174,9 +360,12 @@ Aplikasi Pemesanan Kopi Dengan UI Sederhana            </p>
                 <iframe src="https://www.youtube.com/embed/YOUTUBE_ID" title="Brewly Demo" allowfullscreen></iframe>
               </div>
               <p>
-                Brewly App adalah website showcase untuk menampilkan project dan keahlian.
-                Dibuat dengan <b>Bootstrap</b>, memiliki desain responsif dan ringan.
-              </p>
+  Brewly App adalah <b>aplikasi mobile</b> untuk pemesanan kopi dengan UI sederhana.
+  Dibuat dengan <b>Flutter</b>, memiliki desain modern, responsif, dan ringan.
+</p>
+<p>Dibuat Dengan:</p>
+<p>FLUTTER</p>
+<p><a href="https://github.com/Isdude/Brewly_Coffee.git" target="_blank">Link Github</a></p>
             </div>
           </div>
         </div>
@@ -191,7 +380,7 @@ Aplikasi Pemesanan Kopi Dengan UI Sederhana            </p>
             <p class="card-text small text-muted">
               Aplikasi berita olahraga dengan UI sederhana.
             </p>
-            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalSportNews">
+            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalSportNews" style="background-color: #1d9a96;">
               Lihat Detail
             </button>
           </div>
@@ -211,9 +400,12 @@ Aplikasi Pemesanan Kopi Dengan UI Sederhana            </p>
                 <iframe src="https://www.youtube.com/embed/YOUTUBE_ID" title="SportNews Demo" allowfullscreen></iframe>
               </div>
               <p>
-                SportNews adalah aplikasi web untuk menyajikan berita olahraga terkini.
-                Menggunakan API publik untuk update konten secara dinamis.
-              </p>
+  SportNews adalah <b>aplikasi mobile</b> yang menyajikan berita olahraga terkini.
+  Menggunakan API publik untuk update konten secara dinamis, dengan antarmuka sederhana.
+</p>
+<p>Dibuat Dengan:</p>
+<p>FLUTTER</p>
+<p><a href="https://github.com/Isdude/Final_Project_Flutter.git"></a></p>
             </div>
           </div>
         </div>
@@ -228,7 +420,7 @@ Aplikasi Pemesanan Kopi Dengan UI Sederhana            </p>
             <p class="card-text small text-muted">
               Aplikasi kasir sederhana untuk UMKM.
             </p>
-            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalKasir">
+            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalKasir" style="background-color: #1d9a96;">
               Lihat Detail
             </button>
           </div>
@@ -248,101 +440,103 @@ Aplikasi Pemesanan Kopi Dengan UI Sederhana            </p>
                 <iframe src="https://www.youtube.com/embed/YOUTUBE_ID" title="Kasir Poci Demo" allowfullscreen></iframe>
               </div>
               <p>
-                Kasir Poci adalah aplikasi berbasis web untuk memudahkan transaksi
-                penjualan di warung/UMKM. Mendukung pencatatan barang dan laporan.
-              </p>
+  Kasir Poci adalah <b>aplikasi mobile</b> kasir sederhana untuk UMKM.
+  Mendukung pencatatan barang, transaksi penjualan, dan laporan keuangan.
+</p>
+<p>Dibuat Dengan:</p>
+<p>FLUTTER</p>
+
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Project 6 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <img src="img/portofolioweb.png" class="card-img-top" alt="Portfolio Website">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold">Website Portofolio</h5>
-            <p class="card-text small text-muted">
-              Website personal untuk showcase project.
-            </p>
-            <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalPortfolio">
-              Lihat Detail
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal Portfolio -->
-      <div class="modal fade" id="modalPortfolio" tabindex="-1" aria-labelledby="modalPortfolioLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title fw-bold" id="modalPortfolioLabel">Website Portofolio</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-              <div class="ratio ratio-16x9 mb-3">
-                <iframe src="https://www.youtube.com/embed/YOUTUBE_ID" title="Portfolio Demo" allowfullscreen></iframe>
-              </div>
-              <p>
-                Website portofolio pribadi menggunakan <b>Bootstrap</b>
-                untuk menampilkan project, keterampilan, dan informasi kontak.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
 
-  <!-- Sertifikat -->
-  <section id="sertifikat" class="vh-100 d-flex align-items-center bg-light">
-    <div class="container">
-      <h2 class="fw-bold text-center mb-5">Sertifikat</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="img/myskill.jpg" class="card-img-top" alt="Figma Intro">
-            <div class="card-body"><h5 class="fw-bold">Introduction Figma</h5></div>
-          </div>
+<!-- Sertifikat -->
+<section id="sertifikat" class="vh-100 d-flex align-items-center bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Sertifikat</h2>
+
+    <!-- Wrapper scroll -->
+    <div class="scroll-container">
+      <div class="scroll-content">
+
+        <!-- Sertifikat Card -->
+        <div class="card shadow-sm">
+          <img src="img/myskill.jpg" class="card-img-top cert-img" alt="Figma Intro">
+          <div class="card-body"><h5 class="fw-bold">Introduction Figma</h5></div>
         </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="img/2. Figma Tools_page-0001.jpg" class="card-img-top" alt="Figma Tools">
-            <div class="card-body"><h5 class="fw-bold">Figma Tools</h5></div>
-          </div>
+
+        <div class="card shadow-sm">
+          <img src="img/front.jpg" class="card-img-top cert-img" alt="Figma Tools">
+          <div class="card-body"><h5 class="fw-bold">Front-End Development</h5></div>
         </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="img/3. Wireframing Website_page-0001.jpg" class="card-img-top" alt="Wireframing">
-            <div class="card-body"><h5 class="fw-bold">Wireframing Website</h5></div>
-          </div>
+
+        <div class="card shadow-sm">
+          <img src="img/sanber.jpg" class="card-img-top cert-img" alt="Wireframing">
+          <div class="card-body"><h5 class="fw-bold">Flutter - Mobile App Development</h5></div>
         </div>
+
+        <!-- Duplikasi supaya loop animasi halus -->
+        <div class="card shadow-sm">
+          <img src="img/myskill.jpg" class="card-img-top cert-img" alt="Figma Intro">
+          <div class="card-body"><h5 class="fw-bold">Introduction Figma</h5></div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img src="img/front.jpg" class="card-img-top cert-img" alt="Figma Tools">
+          <div class="card-body"><h5 class="fw-bold">Front-End Development</h5></div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img src="img/sanber.jpg" class="card-img-top cert-img" alt="Wireframing">
+          <div class="card-body"><h5 class="fw-bold">Flutter - Mobile App Development</h5></div>
+        </div>
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Contact -->
-  <section id="contact" class="vh-100 d-flex align-items-center bg-white">
-    <div class="container">
-      <h2 class="fw-bold text-center mb-5">Contact Me</h2>
-      <form class="mx-auto" style="max-width:600px;">
-        <div class="mb-3">
-          <input type="text" placeholder="Nama Anda" class="form-control"/>
-        </div>
-        <div class="mb-3">
-          <input type="email" placeholder="Email Anda" class="form-control"/>
-        </div>
-        <div class="mb-3">
-          <textarea rows="4" placeholder="Pesan Anda" class="form-control"></textarea>
-        </div>
-        <button class="btn btn-primary px-4 py-2">Kirim Pesan</button>
-      </form>
-    </div>
-  </section>
+<section id="contact" class="vh-100 d-flex align-items-center bg-white">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Contact Me</h2>
+    <form class="mx-auto shadow p-4 rounded-4 bg-light" style="max-width:600px;">
+      
+      <!-- Nama -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Nama Anda</label>
+        <input type="text" placeholder="Masukkan nama Anda" class="form-control shadow-sm" required>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Email Anda</label>
+        <input type="email" placeholder="Masukkan email Anda" class="form-control shadow-sm" required>
+      </div>
+
+      <!-- Pesan -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Pesan</label>
+        <textarea rows="4" placeholder="Tulis pesan Anda..." class="form-control shadow-sm" required></textarea>
+      </div>
+
+      <!-- Tombol -->
+      <div class="text-center">
+        <button class="btn px-4 py-2 fw-semibold" 
+                style="background-color:#1d9a96; color:white; border:none;">
+          <i class="fa fa-paper-plane me-2"></i>Kirim Pesan
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="bg-dark text-white py-3 text-center">
